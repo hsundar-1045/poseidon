@@ -4,5 +4,5 @@ http:
     headers:
       PRIVATE-TOKEN: xgnRQNQxxm42_qbxuCiH
   - name: github
-    url: https://raw.githubusercontent.com/mayankpande88/formatter/master/%s
+    url: https://raw.githubusercontent.com/K890/poseidon/master/%s
     

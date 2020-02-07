@@ -1,0 +1,8 @@
+http:
+  - name: internal-git
+    url: https://git.saama.net/api/v4/projects/9/repository/files/%s/raw?ref=master
+    headers:
+      PRIVATE-TOKEN: xgnRQNQxxm42_qbxuCiH
+  - name: github
+    url: https://raw.githubusercontent.com/mayankpande88/formatter/master/%s
+    

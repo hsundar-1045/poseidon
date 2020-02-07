@@ -5,9 +5,9 @@
     <action name="shell1"> <!-- retry options..depend upon actions -->
 			<hdp:SHELL>
 				<exec>bash</exec>
-				<args>testShell.sh</args>
+				<args>testSh.sh</args>
 				<distributedCache>
-					<file>map:github://testShell.sh</file>
+					<file>${gitbase}/artifacts/workflows/layer1/blobs/testSh.sh</file>
 				</distributedCache>
 			</hdp:SHELL>			
 			<ok to="end" />

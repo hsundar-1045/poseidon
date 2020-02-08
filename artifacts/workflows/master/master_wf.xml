@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <workflow xmlns:hdp="hdp"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" engine="hadoop"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" engine="kubernetes"
 	name="subworkflow_tennis"
 	xsi:noNamespaceSchemaLocation="../../workflow_schema.xsd"
 	xsi:schemaLocation="hdp ../../actions_hadoop.xsd">

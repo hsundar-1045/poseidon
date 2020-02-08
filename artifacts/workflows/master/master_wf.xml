@@ -9,7 +9,7 @@
 		<start to="Subworkfl_100" />
 		<action name="Subworkfl_100">
 			<hdp:subworkflow>
-				<appPath>${gitbase}/artifacts/workflows/layer1/layer1.xml</appPath>
+				<appPath>map:github://artifacts/workflows/layer1/layer1.xml</appPath>
 			</hdp:subworkflow>
 			<ok to="end" />
 			<fail to="kill" />

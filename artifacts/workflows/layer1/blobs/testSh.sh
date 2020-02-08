@@ -1,1 +1,1 @@
-echo 'Hello Zus'
+echo 'Hello'

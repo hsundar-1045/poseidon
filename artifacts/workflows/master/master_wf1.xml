@@ -1,1 +1,23 @@
-
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<workflow xmlns:hdp="hdp"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" engine="hadoop"
+	name="subworkflow_tennis"
+	xsi:noNamespaceSchemaLocation="../../workflow_schema.xsd"
+	xsi:schemaLocation="hdp ../../actions_hadoop.xsd">
+	<job
+		jobConfFile="map:github://artifacts/workflows/blobs/workflowProps.props">
+		<start to="Subworkfl_100" />
+		<action name="Subworkfl_100">
+			<hdp:subworkflow>
+				<appPath>${gitbase}/artifacts/workflows/layer1/layer1.xml</appPath>
+			</hdp:subworkflow>
+			<ok to="end" />
+			<fail to="kill" />
+			<stats enabled="true" />
+		</action>
+		<kill name="kill">
+			<message>The workflow failed.</message>
+		</kill>
+		<end name="end" />
+	</job>
+</workflow>

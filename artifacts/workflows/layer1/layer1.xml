@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workflow xmlns:hdp="hdp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" engine="kubernetes" name="SampleWorkflow" xsi:noNamespaceSchemaLocation="../../workflow_schema.xsd" xsi:schemaLocation="hdp ../../actions_hadoop.xsd">
-  <job>
+  <job jobConfFile="map:github://artifacts/workflows/blobs/workflowProps.props">
     <start to="shell1"/>
     <action name="shell1"> <!-- retry options..depend upon actions -->
 			<hdp:SHELL>

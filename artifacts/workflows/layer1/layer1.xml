@@ -7,7 +7,7 @@
 				<exec>bash</exec>
 				<args>testSh.sh</args>
 				<distributedCache>
-					<file>${gitbase}/artifacts/workflows/layer1/blobs/testSh.sh</file>
+					<file>map:github://artifacts/workflows/layer1/blobs/testSh.sh</file>
 				</distributedCache>
 			</hdp:SHELL>			
 			<ok to="end" />
